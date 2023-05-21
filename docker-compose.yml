@@ -1,0 +1,13 @@
+version: "4.19"
+services:
+  proyectos-back:
+    container_name: proyectos-back
+    image: proyectos-back:v1
+    build:
+      context: .
+    ports:
+      - "4005:4005"
+    networks:
+      - proyectos-app
+networks:
+  proyectos-app:
